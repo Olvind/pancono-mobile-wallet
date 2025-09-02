@@ -1,20 +1,19 @@
-name: pancono_wallet
-description: Pancono Mobile Wallet for reserved wallets
-publish_to: 'none'
-version: 1.0.0+1
+name: pancono_mobile_wallet
+description: A non-custodial crypto wallet
+publish_to: "none"
 
 environment:
-  sdk: ">=2.19.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.5
+  cupertino_icons: ^1.0.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.3
 
 flutter:
   uses-material-design: true
