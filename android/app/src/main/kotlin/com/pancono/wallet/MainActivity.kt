@@ -1,4 +1,4 @@
-package com.example.pancono
+package com.pancono.wallet
 
 import io.flutter.embedding.android.FlutterActivity
 
