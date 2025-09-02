@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "pancono_mobile_wallet"
-include ':app'
+rootProject.name = "your_project_name"  // 🔹 Replace with your Flutter project name
+include(":app")
