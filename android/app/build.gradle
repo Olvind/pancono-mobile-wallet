@@ -1,20 +1,18 @@
-// android/app/build.gradle
-
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
 
 android {
-    namespace "com.pancono.wallet"   // 👈 change this to your real package name
+    namespace "com.panconowallet"
     compileSdkVersion 34
 
     defaultConfig {
-        applicationId "com.pancono.wallet"   // 👈 change to match namespace
+        applicationId "com.panconowallet"
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
     }
 
@@ -36,10 +34,6 @@ android {
 
     kotlinOptions {
         jvmTarget = '17'
-    }
-
-    buildFeatures {
-        viewBinding true
     }
 }
 
