@@ -1,8 +1,0 @@
-# Flutter/Dart/Pub
-.dart_tool/
-.packages
-.pub/
-build/
-.idea/
-*.iml
-*.lock
