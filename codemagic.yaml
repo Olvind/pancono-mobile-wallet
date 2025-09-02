@@ -7,18 +7,19 @@ workflows:
     environment:
       flutter: stable
     
-    scripts:
-      - name: Clean project
-        script: flutter clean
-      - name: Get dependencies
-        script: flutter pub get
-      - name: Build APK
-        script: flutter build apk --debug
     
-    artifacts:
-      - build/app/outputs/flutter-apk/app-debug.apk
-    
-    publishing:
-      email:
-        recipients:
-          - "olvinds91@gmail.com"
+
+scripts:
+  - name: Force migrate MainActivity to V2
+    script: |
+      rm -f android/app/src/main/java/com/panconowallet/MainActivity.java
+      mkdir -p android/app/src/main/kotlin/com/panconowallet
+      cat > android/app/src/main/kotlin/com/panconowallet/MainActivity.kt <<'EOF'
+      package com.panconowallet
+
+      import io.flutter.embedding.android.FlutterActivity
+
+      class MainActivity: FlutterActivity() {
+      }
+      EOF
+
