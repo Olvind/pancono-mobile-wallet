@@ -6,15 +6,12 @@ plugins {
 android {
     namespace "com.panconowallet"
     compileSdkVersion 34
-
     defaultConfig {
         applicationId "com.panconowallet"
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 1
-        versionName "1.0"
-        multiDexEnabled true
     }
+}
 
     buildTypes {
         release {
